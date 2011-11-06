@@ -47,8 +47,15 @@ class AmbientBlock extends Block {
      */
     public void setAmbientValue(int type, int value) {
 
-        this.data[2 * type + 2] = (byte) type;
-        this.data[2 * type + 3] = (byte) value;
+        this.data[2 * 1 + 2] = (byte) type;
+        this.data[2 * 1 + 3] = (byte) value;
+
+        this.data[6] = (byte) 25;
+        for (int i = 7; i < 16 + 6; i++) {
+            this.data[7] = (byte) 10;
+            this.data[8] = (byte) 10;
+            this.data[9] = (byte) 10;
+        }
     }
 
     /**
