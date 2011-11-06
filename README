@@ -1,0 +1,5 @@
+To run it : 
+groovy server.groovy
+
+Will be launched on port 8080, configure your rabbit to use http://MY_IP:8080/vl.
+Jenkins URL can be configured in ping.groovy
